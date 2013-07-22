@@ -107,4 +107,6 @@ int log_continue(const char *fmt, ...)
 	va_start(ap, fmt);
 	l = vlog_continue(fmt, ap);
 	va_end(ap);
+
+	return l;
 }
